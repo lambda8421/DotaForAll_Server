@@ -1,4 +1,4 @@
-package com.mofei.dota.scrawler;
+package com.mofei.dota.crawler;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
