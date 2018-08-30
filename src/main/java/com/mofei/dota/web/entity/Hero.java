@@ -18,8 +18,10 @@ public class Hero {
     private String primaryAttr;
     private AttackType attackType;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "hero_id",referencedColumnName = "id")
+   @ManyToMany
+   @JoinTable(name = "hero_role",
+           joinColumns = @JoinColumn(name = "hero_id"),
+           inverseJoinColumns = @JoinColumn(name = "role_id"))
     private List<Role> roles;
 
     private Integer legs;
