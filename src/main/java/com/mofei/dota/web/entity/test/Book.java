@@ -1,4 +1,4 @@
-package com.mofei.dota.web.entity;
+package com.mofei.dota.web.entity.test;
 
 import javax.persistence.Entity;
 import javax.persistence.*;
