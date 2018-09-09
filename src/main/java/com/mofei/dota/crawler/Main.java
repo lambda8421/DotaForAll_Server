@@ -11,7 +11,9 @@ import java.net.URL;
 
 public class Main {
     public static void main(String[] args) {
-        test("https://api.opendota.com/api/heroes");
+
+        return;
+//        test("https://api.opendota.com/api/heroes");
     }
 
 
