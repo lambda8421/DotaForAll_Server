@@ -16,7 +16,13 @@ public class HeroController {
 
     @GetMapping(value = "/hero/{id}")
     @ResponseBody
-    public Hero getHeroes(@PathVariable Long id){
+    public Hero getHero(@PathVariable Long id){
+        return null;
+    }
+
+    @GetMapping(value = "/heroes/{roleId}")
+    @ResponseBody
+    public List<Hero> getHeroes(@PathVariable Long roleId){
         return null;
     }
 
