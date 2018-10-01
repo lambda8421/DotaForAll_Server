@@ -41,5 +41,61 @@ public class Hero implements Serializable {
 
     public Hero() {
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLocalizedName() {
+        return localizedName;
+    }
+
+    public void setLocalizedName(String localizedName) {
+        this.localizedName = localizedName;
+    }
+
+    public String getPrimaryAttr() {
+        return primaryAttr;
+    }
+
+    public void setPrimaryAttr(String primaryAttr) {
+        this.primaryAttr = primaryAttr;
+    }
+
+    public AttackType getAttackType() {
+        return attackType;
+    }
+
+    public void setAttackType(AttackType attackType) {
+        this.attackType = attackType;
+    }
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
+    }
+
+    public Integer getLegs() {
+        return legs;
+    }
+
+    public void setLegs(Integer legs) {
+        this.legs = legs;
+    }
 }
 
