@@ -20,6 +20,7 @@ public class HeroCrawler {
             while ((line = bufReader.readLine()) != null) {
                 contentBuf.append(line);
             }
+            contentBuf.toString();
 //            crawlerData = contentBuf.toString();
         }catch (Exception e){
 //            crawlerData = null;

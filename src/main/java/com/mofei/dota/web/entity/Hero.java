@@ -1,6 +1,7 @@
 package com.mofei.dota.web.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.mofei.dota.web.base.AttackType;
 import com.mofei.dota.web.entity.Role;
@@ -10,6 +11,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
+@JsonIgnoreProperties(value = { "roles" })
 public class Hero implements Serializable {
 
     @Id
@@ -32,7 +34,6 @@ public class Hero implements Serializable {
     @JoinTable(name = "hero_role",
             joinColumns = @JoinColumn(name = "hero_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id"))
-    @JsonProperty("roles")
     private List<Role> roles;
 
     @JsonProperty("legs")
