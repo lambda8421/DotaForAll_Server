@@ -21,6 +21,7 @@ public class HeroCrawler {
                 contentBuf.append(line);
             }
 //            crawlerData = contentBuf.toString();
+
         }catch (Exception e){
 //            crawlerData = null;
             System.out.println(e.getStackTrace());
